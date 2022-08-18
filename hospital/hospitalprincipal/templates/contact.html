@@ -2,4 +2,46 @@
 {% include 'navigation.html' %}
 
 
-<h1>Conctato us</h1>
+<style>
+  .mydivstyle:hover {
+   
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+  }
+</style>
+
+
+
+
+{% block content %}
+
+<div class="container text-center">
+    <h1 class="text-center mt-5  fas fas-phone-square">Contactanos</h1>
+    <div class="row mt-5 text-center">
+      <div class="col-lg-3 col-sm-6 mydivstyle">
+        
+         <h4> <i class="fa-solid fa-phone" ></i> Telefono</h4>
+         <p class="text-danger font-weight-bold mt-3"><a href="tel:+573043314456">+573043314456</a></p>
+      </div>
+      <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4 ><i style=" margin-right: 5px; ;" class="fa-solid fa-envelope"></i>Enviar-Email</h4>
+        <p class="font-weight-bold mt-3"><a href="mailto:m@gmail.com">m@gmail.com</a></p>
+      </div>
+      <div class="col-lg-3 col-sm-6  mydivstyle">
+        <h4><i style=" margin-right: 5px; ;" class="fa-solid fa-address-card"></i>Dirección de la oficina</h4>
+        <p class="font-weight-bold mt-3"><a href="https://maps.google.com/maps?q=Valledupar">Valledupar,Cesar</a></p>
+      </div>
+
+      <div class="col-lg-3  col-sm-6 mydivstyle">
+        <h4><i style=" margin-right: 5px; ;" class="fa-solid fa-address-card"></i>Tiempo de la oficina</h4>
+        <p class="font-weight-bold mt-3">8AM a 5PM</p>
+      </div>
+    </div>
+    
+    
+  </div>
+
+
+{% endblock content  %}
+
+{% include 'footer.html' %}
